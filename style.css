@@ -1,0 +1,160 @@
+:root{
+    --maincolor:blueviolet;
+    --secondarycolor: yellow;
+    --graytext: rgb(63, 63, 63);
+
+    /* CORES VINDAS DO FIGMA */
+    --dark-gray-2: #646464;
+    --light-gray: #8f8f8f;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    padding: 0 0;
+}
+body{
+    padding: 0 200px;
+}
+
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.input-main-search{
+    width: 400px;
+}
+
+.main-nav-button:hover{
+    border-bottom: 3px solid var(--maincolor);
+    font-weight: 700;
+}
+
+.shop-cart{
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    padding: 0;
+}
+
+.shop-cart img{
+    width: 100%;
+}
+
+.shop-cart .shop-cart-count {
+    background-color: var(--maincolor);
+    color: white;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.button-cta-entrar{
+    background-color: var(--maincolor);
+    border: none;
+    border-radius: 15px;
+    padding: 10px 25px;
+    color: white;
+}
+
+.container-cards-produtosemalta{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 750px){
+    .container-cards-produtosemalta{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.title-produtosemalta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-produtosemalta-main{
+    color: var(--dark-gray-2);
+}
+
+.title-produtosemalta a{
+    color: var(--light-gray);
+}
+
+.card-produto{
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 8px rgba(183, 183, 183, 0.664);
+    min-width: 160px;
+}
+
+.card-produto:hover{
+    box-shadow: 2px 2px 8px var(--maincolor);
+}
+
+.card-produto figure{
+    margin: 0;
+    text-align: center;
+}
+
+.card-produto img{
+    width: 160px;
+}
+
+.card-produto-cupom{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--secondarycolor);
+    color: var(--graytext);
+}
+
+.card-produto h4{
+    font-weight: 400;
+}
+
+.card-produto h3{
+    color: var(--dark-gray-2);
+}
+
+.card-produto h4{
+    color: var(--light-gray);
+}
+
+.preco-antigo{
+    color: var(--light-gray);
+    text-decoration: line-through;
+}
+
+.preco-novo{
+    font-weight: bold;
+}
